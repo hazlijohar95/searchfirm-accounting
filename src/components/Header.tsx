@@ -13,9 +13,9 @@ const Header = ({ searchQuery, setSearchQuery }: HeaderProps) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
           <div className="flex items-center">
-            <h1 className="text-3xl font-bold bg-gradient-to-r from-shopify-purple to-shopify-purple-dark bg-clip-text text-transparent flex items-center">
+            <h1 className="text-3xl font-bold text-black flex items-center">
               <svg 
-                className="w-10 h-10 mr-3 text-shopify-purple" 
+                className="w-10 h-10 mr-3 text-black" 
                 viewBox="0 0 24 24" 
                 fill="none" 
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ const Header = ({ searchQuery, setSearchQuery }: HeaderProps) => {
                   strokeLinecap="round"
                 />
               </svg>
-              Malaysia Accounting Directory
+              SearchFirm
             </h1>
           </div>
           
@@ -52,7 +52,7 @@ const Header = ({ searchQuery, setSearchQuery }: HeaderProps) => {
               placeholder="Search firms..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-10 w-full border-gray-200 focus:border-shopify-purple focus:ring-shopify-purple bg-white/50"
+              className="pl-10 w-full border-gray-200 focus:border-black focus:ring-black bg-white/50"
             />
           </div>
         </div>
