@@ -1,14 +1,39 @@
 
+import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, Globe, Mail, Phone } from 'lucide-react';
+import { ArrowLeft, Globe, Mail, Phone, Bookmark, BookmarkCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { formatUrl } from '@/utils/formatters';
+import { toggleBookmark, isBookmarked } from '@/utils/bookmarkUtils';
+import { toast } from '@/components/ui/use-toast';
 import firmsData from '@/data/firms.json';
 import { FirmData } from '@/data/types';
 
 const FirmDetail = () => {
   const { id } = useParams<{ id: string }>();
   const firm = firmsData.find(f => f.id === id) as FirmData | undefined;
+  const [bookmarked, setBookmarked] = useState(false);
+
+  useEffect(() => {
+    if (firm) {
+      setBookmarked(isBookmarked(firm.id));
+    }
+  }, [firm]);
+
+  const handleBookmarkToggle = () => {
+    if (!firm) return;
+    
+    const newBookmarkState = toggleBookmark(firm.id);
+    setBookmarked(newBookmarkState);
+    
+    toast({
+      title: newBookmarkState ? "Firm Bookmarked" : "Bookmark Removed",
+      description: newBookmarkState ? 
+        `${firm.name} has been added to your bookmarks.` : 
+        `${firm.name} has been removed from your bookmarks.`,
+      duration: 2000
+    });
+  };
 
   if (!firm) {
     return (
@@ -40,6 +65,27 @@ const FirmDetail = () => {
               <ArrowLeft className="h-5 w-5 mr-2" />
               <span className="font-medium">Back to Directory</span>
             </Link>
+            
+            <div className="flex items-center">
+              <Button
+                variant="ghost"
+                onClick={handleBookmarkToggle}
+                className="flex items-center mr-2"
+              >
+                {bookmarked ? (
+                  <BookmarkCheck className="h-5 w-5 text-shopify-purple mr-2" />
+                ) : (
+                  <Bookmark className="h-5 w-5 mr-2" />
+                )}
+                {bookmarked ? "Bookmarked" : "Bookmark"}
+              </Button>
+              
+              <Link to="/map">
+                <Button variant="outline">
+                  View Map
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </header>
@@ -119,6 +165,23 @@ const FirmDetail = () => {
                   </dd>
                 </div>
               </dl>
+
+              {/* Services */}
+              {firm.services && firm.services.length > 0 && (
+                <div className="mt-8">
+                  <h3 className="text-lg font-medium text-shopify-gray mb-3">Services Offered</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {firm.services.map((service, index) => (
+                      <span 
+                        key={index} 
+                        className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-shopify-purple/10 text-shopify-purple"
+                      >
+                        {service}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>

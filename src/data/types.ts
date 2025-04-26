@@ -9,9 +9,19 @@ export interface FirmData {
   phoneNumber: string;
   email: string;
   website: string | null;
+  latitude?: number;
+  longitude?: number;
+  services?: string[];
+  bookmarked?: boolean;
 }
 
 export type StateOption = {
   value: string;
   label: string;
 };
+
+export type ServiceCategory = {
+  value: string;
+  label: string;
+};
+

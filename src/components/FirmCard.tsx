@@ -1,18 +1,59 @@
 
+import { useState } from 'react';
 import { FirmData } from '@/data/types';
 import { getShortAddress } from '@/utils/formatters';
 import { Card } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
+import { Bookmark, BookmarkCheck } from 'lucide-react';
+import { toggleBookmark } from '@/utils/bookmarkUtils';
+import { toast } from '@/components/ui/use-toast';
 
 interface FirmCardProps {
   firm: FirmData;
+  onBookmarkToggle?: (firmId: string, isBookmarked: boolean) => void;
 }
 
-const FirmCard = ({ firm }: FirmCardProps) => {
+const FirmCard = ({ firm, onBookmarkToggle }: FirmCardProps) => {
+  const [isBookmarked, setIsBookmarked] = useState(firm.bookmarked || false);
+
+  const handleBookmarkClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    const newBookmarkState = toggleBookmark(firm.id);
+    setIsBookmarked(newBookmarkState);
+    
+    if (onBookmarkToggle) {
+      onBookmarkToggle(firm.id, newBookmarkState);
+    }
+    
+    toast({
+      title: newBookmarkState ? "Firm Bookmarked" : "Bookmark Removed",
+      description: newBookmarkState ? 
+        `${firm.name} has been added to your bookmarks.` : 
+        `${firm.name} has been removed from your bookmarks.`,
+      duration: 2000
+    });
+  };
+
   return (
-    <Link to={`/firms/${firm.id}`} className="block outline-none group">
+    <Link to={`/firms/${firm.id}`} className="block outline-none group relative">
       <Card className="h-full p-6 bg-white/70 backdrop-blur-sm border-gray-200 hover:border-shopify-purple transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-        <div className="flex items-start justify-between">
+        <div className="absolute top-4 right-4">
+          <button 
+            onClick={handleBookmarkClick}
+            className="p-1 rounded-full hover:bg-gray-100 transition-colors"
+            aria-label={isBookmarked ? "Remove bookmark" : "Add bookmark"}
+          >
+            {isBookmarked ? (
+              <BookmarkCheck className="h-5 w-5 text-shopify-purple" />
+            ) : (
+              <Bookmark className="h-5 w-5 text-gray-400 group-hover:text-shopify-purple" />
+            )}
+          </button>
+        </div>
+
+        <div className="flex items-start justify-between pr-8">
           <div>
             <h3 className="text-lg font-semibold text-gray-900 group-hover:text-shopify-purple transition-colors">
               {firm.name}
@@ -34,6 +75,26 @@ const FirmCard = ({ firm }: FirmCardProps) => {
           </svg>
           {firm.phoneNumber}
         </div>
+        
+        {firm.services && firm.services.length > 0 && (
+          <div className="mt-3">
+            <div className="flex flex-wrap gap-1">
+              {firm.services.slice(0, 3).map((service, index) => (
+                <span 
+                  key={index} 
+                  className="inline-block px-2 py-0.5 bg-gray-100 text-gray-600 rounded-md text-xs"
+                >
+                  {service}
+                </span>
+              ))}
+              {firm.services.length > 3 && (
+                <span className="inline-block px-2 py-0.5 bg-gray-100 text-gray-500 rounded-md text-xs">
+                  +{firm.services.length - 3}
+                </span>
+              )}
+            </div>
+          </div>
+        )}
       </Card>
     </Link>
   );

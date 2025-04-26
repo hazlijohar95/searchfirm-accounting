@@ -9,7 +9,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-7721 3388",
     "email": "info@kpmg.com.my",
-    "website": "https://home.kpmg/my/en/home.html"
+    "website": "https://home.kpmg/my/en/home.html",
+    "latitude": 3.1385,
+    "longitude": 101.6169,
+    "services": ["Audit", "Tax", "Advisory", "Risk Consulting"]
   },
   {
     "id": "2",
@@ -20,7 +23,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-7495 8000",
     "email": "contact@my.ey.com",
-    "website": "https://www.ey.com/en_my"
+    "website": "https://www.ey.com/en_my",
+    "latitude": 3.1569,
+    "longitude": 101.7123,
+    "services": ["Audit", "Tax", "Advisory", "Technology Consulting"]
   },
   {
     "id": "3",
@@ -31,7 +37,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2173 1188",
     "email": "my_info@pwc.com",
-    "website": "https://www.pwc.com/my/en.html"
+    "website": "https://www.pwc.com/my/en.html",
+    "latitude": 3.1323,
+    "longitude": 101.6863,
+    "services": ["Audit", "Tax", "Advisory", "Digital Transformation"]
   },
   {
     "id": "4",
@@ -42,7 +51,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-7610 8888",
     "email": "myinfo@deloitte.com",
-    "website": "https://www2.deloitte.com/my/en.html"
+    "website": "https://www2.deloitte.com/my/en.html",
+    "latitude": 3.1526,
+    "longitude": 101.7282,
+    "services": ["Audit", "Tax", "Advisory", "Financial Services"]
   },
   {
     "id": "5",
@@ -53,7 +65,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2161 0800",
     "email": "info@bdo.my",
-    "website": "https://www.bdo.my"
+    "website": "https://www.bdo.my",
+    "latitude": 3.1612,
+    "longitude": 101.7201,
+    "services": ["Audit", "Tax", "Advisory"]
   },
   {
     "id": "6",
@@ -64,7 +79,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2788 9999",
     "email": "info@crowe.my",
-    "website": "https://www.crowe.com/my"
+    "website": "https://www.crowe.com/my",
+    "latitude": 3.1586,
+    "longitude": 101.7183,
+    "services": ["Audit", "Tax", "Advisory", "Corporate Finance"]
   },
   {
     "id": "7",
@@ -75,7 +93,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2610 2888",
     "email": "info@rsm.com.my",
-    "website": "https://www.rsm.global/malaysia/"
+    "website": "https://www.rsm.global/malaysia/",
+    "latitude": 3.1603,
+    "longitude": 101.7099,
+    "services": ["Audit", "Tax", "Advisory", "Risk Management"]
   },
   {
     "id": "8",
@@ -86,7 +107,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2692 4022",
     "email": "info@my.gt.com",
-    "website": "https://www.grantthornton.com.my"
+    "website": "https://www.grantthornton.com.my",
+    "latitude": 3.1495,
+    "longitude": 101.6984,
+    "services": ["Audit", "Tax", "Advisory"]
   },
   {
     "id": "9",
@@ -97,7 +121,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2161 5222",
     "email": "info@mazars.my",
-    "website": "https://www.mazars.my"
+    "website": "https://www.mazars.my",
+    "latitude": 3.1575,
+    "longitude": 101.7199,
+    "services": ["Audit", "Tax", "Advisory", "Outsourcing"]
   },
   {
     "id": "10",
@@ -108,7 +135,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2297 1000",
     "email": "info@bakertilly.my",
-    "website": "https://www.bakertilly.my"
+    "website": "https://www.bakertilly.my",
+    "latitude": 3.1088,
+    "longitude": 101.6650,
+    "services": ["Audit", "Tax", "Advisory", "Corporate Recovery"]
   },
   {
     "id": "11",
@@ -119,7 +149,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2279 3088",
     "email": "info@uhy-my.com",
-    "website": "https://www.uhy.com.my"
+    "website": "https://www.uhy.com.my",
+    "latitude": 3.1218,
+    "longitude": 101.6769,
+    "services": ["Audit", "Tax", "Advisory"]
   },
   {
     "id": "12",
@@ -130,7 +163,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2282 9111",
     "email": "info@russellbedford.com.my",
-    "website": "https://www.russellbedford.com.my"
+    "website": "https://www.russellbedford.com.my",
+    "latitude": 3.1208,
+    "longitude": 101.6779,
+    "services": ["Audit", "Tax", "Advisory", "Business Consulting"]
   },
   {
     "id": "13",
@@ -141,7 +177,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-6203 1888",
     "email": "pkfmalaysia@pkfmalaysia.com",
-    "website": "https://www.pkfmalaysia.com"
+    "website": "https://www.pkfmalaysia.com",
+    "latitude": 3.1702,
+    "longitude": 101.6503,
+    "services": ["Audit", "Tax", "Advisory", "Corporate Finance"]
   },
   {
     "id": "14",
@@ -152,7 +191,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2031 1844",
     "email": "info@nexiassy.com",
-    "website": "https://www.nexia.com/nexiassy/"
+    "website": "https://www.nexia.com/nexiassy/",
+    "latitude": 3.1515,
+    "longitude": 101.7025,
+    "services": ["Audit", "Tax", "Advisory"]
   },
   {
     "id": "15",
@@ -163,7 +205,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2161 2755",
     "email": "info@hlb.com.my",
-    "website": "https://www.hlb.com.my"
+    "website": "https://www.hlb.com.my",
+    "latitude": 3.1492,
+    "longitude": 101.6984,
+    "services": ["Audit", "Tax", "Advisory", "Business Consulting"]
   },
   {
     "id": "16",
@@ -174,7 +219,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2274 8988",
     "email": "info@moore.com.my",
-    "website": "https://www.moore.com.my"
+    "website": "https://www.moore.com.my",
+    "latitude": 3.1418,
+    "longitude": 101.7012,
+    "services": ["Audit", "Tax", "Advisory", "Business Consulting"]
   },
   {
     "id": "17",
@@ -185,7 +233,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2692 4022",
     "email": "info@sjgt.com.my",
-    "website": "https://www.grantthornton.com.my"
+    "website": "https://www.grantthornton.com.my",
+    "latitude": 3.1497,
+    "longitude": 101.6981,
+    "services": ["Audit", "Tax", "Business Advisory"]
   },
   {
     "id": "18",
@@ -196,7 +247,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-7981 1799",
     "email": "info@ecovis.com.my",
-    "website": "https://www.ecovis.com/malaysia/"
+    "website": "https://www.ecovis.com/malaysia/",
+    "latitude": 3.0962,
+    "longitude": 101.6803,
+    "services": ["Audit", "Tax", "Advisory", "Business Management"]
   },
   {
     "id": "19",
@@ -207,7 +261,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2181 8861",
     "email": "info@mcmillanwoods.com.my",
-    "website": "http://www.mcmillanwoods.com.my"
+    "website": "http://www.mcmillanwoods.com.my",
+    "latitude": 3.1572,
+    "longitude": 101.7157,
+    "services": ["Audit", "Tax", "Business Advisory"]
   },
   {
     "id": "20",
@@ -218,7 +275,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-2166 2303",
     "email": "info@reanda-llkg.com.my",
-    "website": "https://www.reanda-international.com"
+    "website": "https://www.reanda-international.com",
+    "latitude": 3.1535,
+    "longitude": 101.7165,
+    "services": ["Audit", "Tax", "Advisory"]
   },
   {
     "id": "21",
@@ -229,7 +289,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-4048 2888",
     "email": "general@morisonaac.com.my",
-    "website": "http://www.morisonaac.com.my"
+    "website": "http://www.morisonaac.com.my",
+    "latitude": 3.1889,
+    "longitude": 101.6875,
+    "services": ["Audit", "Tax", "Advisory", "Financial Services"]
   },
   {
     "id": "22",
@@ -240,7 +303,10 @@
     "country": "Malaysia",
     "phoneNumber": "+604-227 5000",
     "email": "inquiries@asq.com.my",
-    "website": "https://www.asq.com.my"
+    "website": "https://www.asq.com.my",
+    "latitude": 5.4163,
+    "longitude": 100.3288,
+    "services": ["Audit", "Tax", "Advisory", "Business Consulting"]
   },
   {
     "id": "23",
@@ -251,7 +317,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-6203 3888",
     "email": "info@scrutinyadvisory.com.my",
-    "website": null
+    "website": null,
+    "latitude": 3.1690,
+    "longitude": 101.6506,
+    "services": ["Audit", "Tax", "Risk Advisory"]
   },
   {
     "id": "24",
@@ -262,7 +331,10 @@
     "country": "Malaysia",
     "phoneNumber": "+603-6211 1150",
     "email": "info@kreston.com.my",
-    "website": "https://www.kreston.com/kreston-john-gan/"
+    "website": "https://www.kreston.com/kreston-john-gan/",
+    "latitude": 3.1628,
+    "longitude": 101.6434,
+    "services": ["Audit", "Tax", "Advisory", "Business Consulting"]
   },
   {
     "id": "25",
@@ -273,6 +345,9 @@
     "country": "Malaysia",
     "phoneNumber": "+603-7831 5588",
     "email": "contact@xenaccounting.com",
-    "website": null
+    "website": null,
+    "latitude": 3.0098,
+    "longitude": 101.6053,
+    "services": ["Audit", "Tax", "Accounting Services"]
   }
 ]
