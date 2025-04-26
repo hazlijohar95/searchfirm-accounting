@@ -1,5 +1,11 @@
 
-import { Select } from "@/components/ui/select";
+import { 
+  Select, 
+  SelectTrigger, 
+  SelectValue, 
+  SelectContent, 
+  SelectItem 
+} from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { StateOption } from "@/data/types";
 
@@ -20,17 +26,18 @@ const FilterBar = ({ states, selectedState, setSelectedState }: FilterBarProps) 
       </div>
       
       <div className="flex items-center space-x-2">
-        <Select
-          value={selectedState}
-          onValueChange={setSelectedState}
-          items={[{ value: "", label: "All States" }, ...states]}
-        >
-          <Button 
-            variant="outline"
-            className="border-shopify-gray-medium text-shopify-gray hover:text-shopify-purple hover:border-shopify-purple"
-          >
-            {selectedState ? states.find(s => s.value === selectedState)?.label || "All States" : "All States"}
-          </Button>
+        <Select value={selectedState} onValueChange={setSelectedState}>
+          <SelectTrigger className="border-shopify-gray-medium text-shopify-gray hover:text-shopify-purple hover:border-shopify-purple w-[180px]">
+            <SelectValue placeholder="All States" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="">All States</SelectItem>
+            {states.map((state) => (
+              <SelectItem key={state.value} value={state.value}>
+                {state.label}
+              </SelectItem>
+            ))}
+          </SelectContent>
         </Select>
       </div>
     </div>
