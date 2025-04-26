@@ -11,7 +11,7 @@ import firmsData from '@/data/firms.json';
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState('');
-  const [selectedState, setSelectedState] = useState('');
+  const [selectedState, setSelectedState] = useState('all');
 
   // Get unique states for the filter dropdown
   const states = useMemo(() => getUniqueStates(firmsData), []);
@@ -22,7 +22,7 @@ const Index = () => {
       const matchesSearch = firm.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
                            firm.firmNumber.toLowerCase().includes(searchQuery.toLowerCase());
       
-      const matchesState = selectedState === '' || firm.state === selectedState;
+      const matchesState = selectedState === 'all' || firm.state === selectedState;
       
       return matchesSearch && matchesState;
     });

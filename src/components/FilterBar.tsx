@@ -31,7 +31,7 @@ const FilterBar = ({ states, selectedState, setSelectedState }: FilterBarProps) 
             <SelectValue placeholder="All States" />
           </SelectTrigger>
           <SelectContent>
-            <SelectItem value="">All States</SelectItem>
+            <SelectItem value="all">All States</SelectItem>
             {states.map((state) => (
               <SelectItem key={state.value} value={state.value}>
                 {state.label}
