@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
@@ -12,6 +11,7 @@ import SubmitFirm from "./pages/SubmitFirm";
 import MapView from "./pages/MapView";
 import NotFound from "./pages/NotFound";
 import SitemapPage from "./pages/SitemapPage";
+import ApiDocs from "./pages/ApiDocs";
 
 // Create a new QueryClient instance
 const queryClient = new QueryClient();
@@ -30,6 +30,7 @@ const App = () => (
             <Route path="/submit" element={<SubmitFirm />} />
             <Route path="/map" element={<MapView />} />
             <Route path="/sitemap.xml" element={<SitemapPage />} />
+            <Route path="/api" element={<ApiDocs />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
