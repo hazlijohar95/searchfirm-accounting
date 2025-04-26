@@ -10,20 +10,22 @@ interface FirmCardProps {
 
 const FirmCard = ({ firm }: FirmCardProps) => {
   return (
-    <Link to={`/firms/${firm.id}`} className="block outline-none">
-      <Card className="h-full p-6 bg-white border border-shopify-gray-medium hover:border-shopify-purple card-hover">
+    <Link to={`/firms/${firm.id}`} className="block outline-none group">
+      <Card className="h-full p-6 bg-white/70 backdrop-blur-sm border-gray-200 hover:border-shopify-purple transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
         <div className="flex items-start justify-between">
           <div>
-            <h3 className="text-lg font-medium text-shopify-gray">{firm.name}</h3>
+            <h3 className="text-lg font-semibold text-gray-900 group-hover:text-shopify-purple transition-colors">
+              {firm.name}
+            </h3>
             <p className="text-sm text-gray-500 mt-1">{firm.firmNumber}</p>
           </div>
-          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-shopify-purple bg-opacity-10 text-shopify-purple">
+          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-shopify-purple/10 text-shopify-purple">
             {firm.state}
           </span>
         </div>
         
         <div className="mt-4">
-          <p className="text-sm text-gray-500">{getShortAddress(firm.address)}</p>
+          <p className="text-sm text-gray-600">{getShortAddress(firm.address)}</p>
         </div>
         
         <div className="mt-4 flex items-center text-sm text-gray-500">

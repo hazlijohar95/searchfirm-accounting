@@ -1,12 +1,8 @@
-
 import { useState, useMemo } from 'react';
 import Header from '@/components/Header';
 import FilterBar from '@/components/FilterBar';
 import FirmGrid from '@/components/FirmGrid';
-import { FirmData } from '@/data/types';
 import { getUniqueStates } from '@/utils/formatters';
-
-// Import the JSON data
 import firmsData from '@/data/firms.json';
 
 const Index = () => {
@@ -29,26 +25,28 @@ const Index = () => {
   }, [searchQuery, selectedState]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-gradient-custom">
       <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       
       <main className="flex-grow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <FilterBar 
-            states={states}
-            selectedState={selectedState}
-            setSelectedState={setSelectedState}
-          />
-          
-          <div className="mt-6">
-            <FirmGrid firms={filteredFirms} />
+          <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6">
+            <FilterBar 
+              states={states}
+              selectedState={selectedState}
+              setSelectedState={setSelectedState}
+            />
+            
+            <div className="mt-6">
+              <FirmGrid firms={filteredFirms} />
+            </div>
           </div>
         </div>
       </main>
       
-      <footer className="bg-white border-t border-shopify-gray-medium py-6">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-sm text-gray-500">
+      <footer className="bg-white/80 backdrop-blur-sm border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <p className="text-center text-sm text-gray-600">
             © 2025 Malaysia Accounting Directory | Open Source Project
           </p>
         </div>
