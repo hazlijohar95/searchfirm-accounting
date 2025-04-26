@@ -32,7 +32,7 @@ const FirmMap = ({ firms }: FirmMapProps) => {
   const centerLng = validFirms.reduce((sum, firm) => sum + (firm.longitude || 0), 0) / validFirms.length;
   
   // Default center if no firms have coordinates
-  const defaultCenter = [3.1390, 101.6869]; // Kuala Lumpur
+  const defaultCenter: [number, number] = [3.1390, 101.6869]; // Kuala Lumpur
   const mapCenter: [number, number] = validFirms.length ? [centerLat, centerLng] : defaultCenter;
 
   return (
@@ -50,7 +50,7 @@ const FirmMap = ({ firms }: FirmMapProps) => {
       {validFirms.map((firm) => (
         <Marker 
           key={firm.id} 
-          position={[firm.latitude || 0, firm.longitude || 0]} 
+          position={[firm.latitude || 0, firm.longitude || 0] as [number, number]} 
           icon={markerIcon}
         >
           <Popup>
