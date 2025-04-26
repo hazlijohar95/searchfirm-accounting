@@ -1,9 +1,11 @@
+
 import { useState, useMemo } from 'react';
 import Header from '@/components/Header';
 import FilterBar from '@/components/FilterBar';
 import FirmGrid from '@/components/FirmGrid';
 import { getUniqueStates } from '@/utils/formatters';
 import firmsData from '@/data/firms.json';
+import { FirmData } from '@/data/types';
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState('');
