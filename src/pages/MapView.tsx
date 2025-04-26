@@ -7,6 +7,7 @@ import FirmMap from '@/components/FirmMap';
 import firmsData from '@/data/firms.json';
 import { FirmData } from '@/data/types';
 import { loadBookmarkedState } from '@/utils/bookmarkUtils';
+import SEO from '@/components/SEO';
 
 const MapView = () => {
   const [firms, setFirms] = useState<FirmData[]>([]);
@@ -18,6 +19,11 @@ const MapView = () => {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
+      <SEO 
+        title="Map View" 
+        description="Interactive map of accounting firms in Malaysia - find firms near you with our visual directory."
+      />
+      
       <header className="bg-white shadow-sm border-b border-shopify-gray-medium sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">

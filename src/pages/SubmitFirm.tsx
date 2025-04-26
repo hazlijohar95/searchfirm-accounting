@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/sonner';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { states } from '@/data/states';
+import SEO from '@/components/SEO';
 
 const SubmitFirm = () => {
   const navigate = useNavigate();
@@ -37,6 +38,11 @@ const SubmitFirm = () => {
 
   return (
     <div className="min-h-screen bg-gradient-custom">
+      <SEO 
+        title="Submit New Firm" 
+        description="Submit a new accounting firm to our directory. Help us build a comprehensive listing of accounting firms in Malaysia."
+      />
+      
       <main className="max-w-2xl mx-auto px-4 py-16">
         <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">

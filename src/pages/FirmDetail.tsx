@@ -1,24 +1,33 @@
 
 import { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 import { ArrowLeft, Globe, Mail, Phone, Bookmark, BookmarkCheck } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { formatUrl } from '@/utils/formatters';
 import { toggleBookmark, isBookmarked } from '@/utils/bookmarkUtils';
 import { toast } from '@/components/ui/use-toast';
+import { generateSlug } from '@/utils/sitemapGenerator';
 import firmsData from '@/data/firms.json';
 import { FirmData } from '@/data/types';
+import SEO from '@/components/SEO';
 
 const FirmDetail = () => {
-  const { id } = useParams<{ id: string }>();
+  const { id, slug } = useParams<{ id: string; slug?: string }>();
   const firm = firmsData.find(f => f.id === id) as FirmData | undefined;
   const [bookmarked, setBookmarked] = useState(false);
+  const [redirectToSlug, setRedirectToSlug] = useState(false);
 
   useEffect(() => {
     if (firm) {
       setBookmarked(isBookmarked(firm.id));
+      
+      // If the URL doesn't contain a slug or has the wrong slug, we'll redirect
+      const correctSlug = generateSlug(firm.name);
+      if (!slug && correctSlug) {
+        setRedirectToSlug(true);
+      }
     }
-  }, [firm]);
+  }, [firm, slug]);
 
   const handleBookmarkToggle = () => {
     if (!firm) return;
@@ -34,6 +43,11 @@ const FirmDetail = () => {
       duration: 2000
     });
   };
+
+  if (redirectToSlug && firm) {
+    const correctSlug = generateSlug(firm.name);
+    return <Navigate to={`/firms/${firm.id}/${correctSlug}`} replace />;
+  }
 
   if (!firm) {
     return (
@@ -53,8 +67,21 @@ const FirmDetail = () => {
 
   const website = formatUrl(firm.website);
 
+  // Generate firm description for SEO
+  const firmDescription = `${firm.name} is an accounting firm located in ${firm.state}, Malaysia. ${
+    firm.services ? `They offer ${firm.services.join(', ')} services.` : ''
+  }`;
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO 
+        title={firm.name}
+        description={firmDescription}
+        firmName={firm.name}
+        canonicalUrl={`/firms/${firm.id}/${generateSlug(firm.name)}`}
+        type="article"
+      />
+
       <header className="bg-white shadow-sm border-b border-shopify-gray-medium sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex items-center justify-between">

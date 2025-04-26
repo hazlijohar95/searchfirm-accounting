@@ -11,6 +11,7 @@ import { loadBookmarkedState } from '@/utils/bookmarkUtils';
 import firmsData from '@/data/firms.json';
 import { serviceCategories } from '@/data/services';
 import { FirmData } from '@/data/types';
+import SEO from '@/components/SEO';
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -63,8 +64,28 @@ const Index = () => {
     setShowBookmarkedOnly(!showBookmarkedOnly);
   };
 
+  // SEO description based on filters
+  const getSeoDescription = () => {
+    let description = "Directory of accounting firms in Malaysia";
+    
+    if (selectedState !== 'all') {
+      description += ` in ${selectedState}`;
+    }
+    
+    if (selectedService !== 'all') {
+      description += ` providing ${selectedService} services`;
+    }
+    
+    return description + ".";
+  };
+
   return (
     <div className="min-h-screen flex flex-col bg-gradient-custom">
+      <SEO 
+        title="Accounting Firms Directory" 
+        description={getSeoDescription()}
+      />
+      
       <Header searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       
       <main className="flex-grow">
