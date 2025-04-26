@@ -1,8 +1,10 @@
 
 import { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import Header from '@/components/Header';
 import FilterBar from '@/components/FilterBar';
 import FirmGrid from '@/components/FirmGrid';
+import { Button } from '@/components/ui/button';
 import { getUniqueStates } from '@/utils/formatters';
 import firmsData from '@/data/firms.json';
 import { FirmData } from '@/data/types';
@@ -33,11 +35,16 @@ const Index = () => {
       <main className="flex-grow">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl shadow-lg p-6">
-            <FilterBar 
-              states={states}
-              selectedState={selectedState}
-              setSelectedState={setSelectedState}
-            />
+            <div className="flex justify-between items-center mb-6">
+              <FilterBar 
+                states={states}
+                selectedState={selectedState}
+                setSelectedState={setSelectedState}
+              />
+              <Link to="/submit">
+                <Button>Submit New Firm</Button>
+              </Link>
+            </div>
             
             <div className="mt-6">
               <FirmGrid firms={filteredFirms} />
