@@ -1,0 +1,278 @@
+
+[
+  {
+    "id": "1",
+    "firmNumber": "AF0001",
+    "name": "KPMG PLT",
+    "address": "Level 10, KPMG Tower, 8 First Avenue, Bandar Utama, 47800 Petaling Jaya",
+    "state": "Selangor",
+    "country": "Malaysia",
+    "phoneNumber": "+603-7721 3388",
+    "email": "info@kpmg.com.my",
+    "website": "https://home.kpmg/my/en/home.html"
+  },
+  {
+    "id": "2",
+    "firmNumber": "AF0002",
+    "name": "Ernst & Young PLT",
+    "address": "Level 23A Menara Milenium, Jalan Damanlela, Pusat Bandar Damansara, 50490 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-7495 8000",
+    "email": "contact@my.ey.com",
+    "website": "https://www.ey.com/en_my"
+  },
+  {
+    "id": "3",
+    "firmNumber": "AF0003",
+    "name": "PricewaterhouseCoopers PLT",
+    "address": "Level 10, 1 Sentral, Jalan Rakyat, Kuala Lumpur Sentral, 50706 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2173 1188",
+    "email": "my_info@pwc.com",
+    "website": "https://www.pwc.com/my/en.html"
+  },
+  {
+    "id": "4",
+    "firmNumber": "AF0004",
+    "name": "Deloitte PLT",
+    "address": "Level 16, Menara LGB, 1 Jalan Wan Kadir, Taman Tun Dr Ismail, 60000 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-7610 8888",
+    "email": "myinfo@deloitte.com",
+    "website": "https://www2.deloitte.com/my/en.html"
+  },
+  {
+    "id": "5",
+    "firmNumber": "AF0005",
+    "name": "BDO Malaysia",
+    "address": "Level 8, BDO Tower, CX Centre, 2A Jalan 1/68F, Jalan Tun Razak, 50400 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2161 0800",
+    "email": "info@bdo.my",
+    "website": "https://www.bdo.my"
+  },
+  {
+    "id": "6",
+    "firmNumber": "AF0006",
+    "name": "Crowe Malaysia PLT",
+    "address": "Level 16, Tower C, Megan Avenue 2, 12 Jalan Yap Kwan Seng, 50450 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2788 9999",
+    "email": "info@crowe.my",
+    "website": "https://www.crowe.com/my"
+  },
+  {
+    "id": "7",
+    "firmNumber": "AF0007",
+    "name": "RSM Malaysia",
+    "address": "5th Floor, Penthouse, Wisma RKT, Block A, No. 2, Jalan Raja Abdullah, 50300 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2610 2888",
+    "email": "info@rsm.com.my",
+    "website": "https://www.rsm.global/malaysia/"
+  },
+  {
+    "id": "8",
+    "firmNumber": "AF0008",
+    "name": "Grant Thornton Malaysia PLT",
+    "address": "Level 11, Sheraton Imperial Court, Jalan Sultan Ismail, 50250 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2692 4022",
+    "email": "info@my.gt.com",
+    "website": "https://www.grantthornton.com.my"
+  },
+  {
+    "id": "9",
+    "firmNumber": "AF0009",
+    "name": "Mazars PLT",
+    "address": "Wisma Golden Eagle Realty, 11th Floor, 142-C Jalan Ampang, 50450 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2161 5222",
+    "email": "info@mazars.my",
+    "website": "https://www.mazars.my"
+  },
+  {
+    "id": "10",
+    "firmNumber": "AF0010",
+    "name": "Baker Tilly Malaysia",
+    "address": "Baker Tilly Tower, Level 10, Tower 1, Avenue 5, Bangsar South City, 59200 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2297 1000",
+    "email": "info@bakertilly.my",
+    "website": "https://www.bakertilly.my"
+  },
+  {
+    "id": "11",
+    "firmNumber": "AF0011",
+    "name": "UHY Malaysia",
+    "address": "Suite 11.05, Level 11, The Gardens South Tower, Mid Valley City, Lingkaran Syed Putra, 59200 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2279 3088",
+    "email": "info@uhy-my.com",
+    "website": "https://www.uhy.com.my"
+  },
+  {
+    "id": "12",
+    "firmNumber": "AF0012",
+    "name": "Russell Bedford Malaysia",
+    "address": "Suite 6.02, Level 6, Menara IGB, Mid Valley City, 59200 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2282 9111",
+    "email": "info@russellbedford.com.my",
+    "website": "https://www.russellbedford.com.my"
+  },
+  {
+    "id": "13",
+    "firmNumber": "AF0013",
+    "name": "PKF Malaysia",
+    "address": "Level 33, Menara 1MK, Kompleks 1 Mont Kiara, No.1, Jalan Kiara, 50480 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-6203 1888",
+    "email": "pkfmalaysia@pkfmalaysia.com",
+    "website": "https://www.pkfmalaysia.com"
+  },
+  {
+    "id": "14",
+    "firmNumber": "AF0014",
+    "name": "Nexia SSY",
+    "address": "SSY Nexia, 6th Floor Wisma SSY, 34 Jalan Raja Chulan, 50200 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2031 1844",
+    "email": "info@nexiassy.com",
+    "website": "https://www.nexia.com/nexiassy/"
+  },
+  {
+    "id": "15",
+    "firmNumber": "AF0015",
+    "name": "HLB Malaysia",
+    "address": "Level 15-2, Sheraton Imperial Court, Jalan Sultan Ismail, 50250 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2161 2755",
+    "email": "info@hlb.com.my",
+    "website": "https://www.hlb.com.my"
+  },
+  {
+    "id": "16",
+    "firmNumber": "AF0016",
+    "name": "Moore Stephens Malaysia",
+    "address": "Unit 3.3A, 3rd Floor, Menara Sentral Vista, 150, Jalan Sultan Abdul Samad, 50470 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2274 8988",
+    "email": "info@moore.com.my",
+    "website": "https://www.moore.com.my"
+  },
+  {
+    "id": "17",
+    "firmNumber": "AF0017",
+    "name": "S J Grant Thornton",
+    "address": "Level 13, Sheraton Imperial Court, Jalan Sultan Ismail, 50250 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2692 4022",
+    "email": "info@sjgt.com.my",
+    "website": "https://www.grantthornton.com.my"
+  },
+  {
+    "id": "18",
+    "firmNumber": "AF0018",
+    "name": "Ecovis Malaysia PLT",
+    "address": "No. 9-3, Jalan 109F, Plaza Danau 2, Taman Danau Desa, 58100 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-7981 1799",
+    "email": "info@ecovis.com.my",
+    "website": "https://www.ecovis.com/malaysia/"
+  },
+  {
+    "id": "19",
+    "firmNumber": "AF0019",
+    "name": "McMillan Woods Malaysia",
+    "address": "Level 15, Plaza 138, Hotel Maya, Jalan Ampang, 50450 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2181 8861",
+    "email": "info@mcmillanwoods.com.my",
+    "website": "http://www.mcmillanwoods.com.my"
+  },
+  {
+    "id": "20",
+    "firmNumber": "AF0020",
+    "name": "Reanda LLKG International",
+    "address": "Suite 9-5, Level 9, Wisma UOA II, Jalan Pinang, 50450 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-2166 2303",
+    "email": "info@reanda-llkg.com.my",
+    "website": "https://www.reanda-international.com"
+  },
+  {
+    "id": "21",
+    "firmNumber": "AF0021",
+    "name": "Morison AAC PLT",
+    "address": "18, Jalan Pinggir 1/64, Jalan Kolam Air, Off Jalan Sultan Azlan Shah (Jalan Ipoh), 51200 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-4048 2888",
+    "email": "general@morisonaac.com.my",
+    "website": "http://www.morisonaac.com.my"
+  },
+  {
+    "id": "22",
+    "firmNumber": "AF0022",
+    "name": "ASQ Penang",
+    "address": "10-03, 10th Floor, Penang Times Square, Jalan Dato' Keramat, 10150 Penang",
+    "state": "Penang",
+    "country": "Malaysia",
+    "phoneNumber": "+604-227 5000",
+    "email": "inquiries@asq.com.my",
+    "website": "https://www.asq.com.my"
+  },
+  {
+    "id": "23",
+    "firmNumber": "AF0023",
+    "name": "Scrutiny Advisory PLT",
+    "address": "B-5-8, Plaza Mont Kiara, Mont Kiara, 50480 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-6203 3888",
+    "email": "info@scrutinyadvisory.com.my",
+    "website": null
+  },
+  {
+    "id": "24",
+    "firmNumber": "AF0024",
+    "name": "Kreston John & Gan",
+    "address": "No. 46-1, Jalan 28/70A, Desa Sri Hartamas, 50480 Kuala Lumpur",
+    "state": "Kuala Lumpur",
+    "country": "Malaysia",
+    "phoneNumber": "+603-6211 1150",
+    "email": "info@kreston.com.my",
+    "website": "https://www.kreston.com/kreston-john-gan/"
+  },
+  {
+    "id": "25",
+    "firmNumber": "AF0025",
+    "name": "Xen Accounting Services",
+    "address": "12A, Jalan Teknologi 3/6, Taman Sains Selangor, 47810 Petaling Jaya",
+    "state": "Selangor",
+    "country": "Malaysia",
+    "phoneNumber": "+603-7831 5588",
+    "email": "contact@xenaccounting.com",
+    "website": null
+  }
+]
