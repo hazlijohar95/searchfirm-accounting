@@ -8,10 +8,6 @@
 
 A professional directory of accounting firms in Malaysia with searchable and filterable listings.
 
-## 🚀 Live Demo
-
-Visit the live application: [SearchFirm Directory](https://lovable.dev/projects/ed83f680-a091-4f37-848b-745830b34221)
-
 ## Project info
 
 **URL**: https://lovable.dev/projects/ed83f680-a091-4f37-848b-745830b34221
