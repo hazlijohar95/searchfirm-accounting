@@ -1,5 +1,5 @@
 
-# SearchFirm - Malaysia Accounting Directory 📊
+# SearchFirm - Accounting Firm in Malaysia (Audit, Non-Audit and Private Limited)
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
